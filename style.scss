@@ -1,0 +1,28 @@
+$color-red: red; $color-yellow: yelow;$color-green: green; $color-blue: blue;
+
+div{
+  border: 1px solid $color-red;
+  h1{
+    display: flex;
+    justify-content: center;
+    color: $color-green;
+    text-decoration: 2px solid $color-blue underline;
+  }
+  section{
+    padding: 0.5rem;
+    article{
+      text-align: center;
+      padding: 9px;
+      border: 1px solid $color-green;
+      color: $color-blue;
+
+    }
+    display: flex;
+    flex-direction: row;
+  }
+  .red_p{
+    color: $color-red;
+  }
+}
+
+
