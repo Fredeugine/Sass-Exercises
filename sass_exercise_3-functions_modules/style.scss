@@ -1,0 +1,39 @@
+@mixin article($font,$border_color,$font_color){
+  color: $font_color;
+  border: 1px solid $border_color;
+  font-size: $font;
+  text-align: center;
+  padding: 9px;
+}
+
+$color-red: red; $color-yellow: yelow;$color-green: green; $color-blue: blue;
+
+div{
+  border: 1px solid $color-red;
+  h1{
+    display: flex;
+    justify-content: center;
+    color: $color-green;
+    text-decoration: 2px solid $color-blue underline;
+  }
+  section{
+    padding: 0.5rem;
+    article{
+      @include article(1rem,green,blue);
+    }
+    display: flex;
+    flex-direction: row;
+  }
+  .red_p{
+    @include article(1rem,green,red);
+  }
+  .footer{
+    article{
+      @include article(24px,blue,green);
+      width: 100%;
+    }
+  }
+
+}
+
+
