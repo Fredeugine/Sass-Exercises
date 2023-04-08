@@ -30,6 +30,7 @@ div{
   .footer{
     article{
       @include article(24px,blue,green);
+      width: 100%;
     }
   }
 
